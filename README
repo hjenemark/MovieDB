@@ -1,0 +1,34 @@
+With this database front-end you can gather all the info for your
+collection of movies.
+
+This is meant as an exercise in mySQL and the interaction between
+a database and a Java application. It might not be the best way
+of storing this kind of information, but it is one way.
+
+Before running the app:
+ - Set up a mySQL database with a table called `MovieArchive` with
+   the following fields (followed by datatype):
+ - - title:	 	varchar(255)
+ - - director	varchar(100)
+ - - lead		varchar(255)
+ - - secondary	text
+ - - runtime	int(4)
+ - - imdburl	varchar(50)
+ - - comments	text
+ - Username and password for the database is to be set in the
+   DBConstants interface, which has to match your own database.
+ 
+   - and yeah, you'll be needing all the packages imported.
+
+The application is set up in the Eclipse IDE and there might be
+some compilation parameters needed that I'm not aware off at this
+point, but the source is there to play around with.
+
+Status: 
+ - Save Button works
+ - Selecting a movie on the list shows its info
+
+To do:
+ - Figure out a final button layout
+ - a class to make an online search after movie info and parsing
+   of the resulting website.
